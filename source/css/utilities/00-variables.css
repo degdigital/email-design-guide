@@ -3,9 +3,10 @@
 	--color-black: #000;
 	--color-white: #fff;
 
-	--color-gray-darkest: #434343;
-	--color-gray-darker: #515151;
+	--color-gray-darkest: #333333;
+	--color-gray-darker: #4a4a4a;
 	--color-gray-dark: #626262;
+	--color-gray-lightest: #f9f9f9;
 
 	--color-gray-lightest: #eee;
 
@@ -16,7 +17,7 @@
 	--color-teal: #85dadf;
 	--color-teal-light: color(var(--color-teal) tint(20%));
 
-	--color-text: var(--color-gray-darkest);
+	--color-text: var(--color-gray-dark);
 
 	--font-family-primary: Arimo, Helvetica, Arial, sans-serif;
 	--font-family-secondary: Ciutadella, Helvetica, Arial, sans-serif;

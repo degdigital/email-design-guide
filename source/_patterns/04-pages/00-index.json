@@ -2,8 +2,14 @@
 	"title" : "DEG Email Design Guide",
 	"intro": {
 		"nextSectionAnchor": {
-			"sectionId": "company-stats",
+			"sectionId": "guide-intro",
 			"color": "white"
 		}
+	},
+	"viewingAudience": {
+		"overlayColor": "133, 218, 223",
+		"backgroundImage": "../../images/audience.jpg",
+		"topicHeading": "Viewing Audience",
+		"topicID": "viewing-audience"
 	}
 }

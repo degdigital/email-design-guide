@@ -1,3 +1,17 @@
-.image-container {
+.image-callout {
+	background-image: linear-gradient(to top, var(--color-gray-lightest) 0%,var(--color-gray-lightest) 80%,var(--color-white) 80%,var(--color-white) 100%);
+}
+
+.image-callout__wrapper {
+	max-width: 44.5rem;
+	margin: 1.5rem auto 2.5rem;
+	padding: 0 1rem;
+}
+
+@media (--medium) {
+
+	.image-callout__wrapper {
+		margin: 3.5rem auto 4.5rem;
+	}
 
 }

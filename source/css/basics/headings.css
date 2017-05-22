@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 .heading--medium {
 	font-size: 1.75rem;
 	margin-bottom: 1.25rem;
+	color: var(--color-gray-darkest);
 }
 
 .heading--medium-alt {
@@ -25,6 +26,12 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 400;
 	line-height: 1.3;
 	color: var(--color-blue);
+}
+
+.heading--small {
+	font-size: 1.25rem;
+	margin-bottom: .75rem;
+	color: var(--color-gray-darker);
 }
 
 @media (--medium) {
@@ -45,5 +52,11 @@ h1,h2,h3,h4,h5,h6 {
 	.heading--medium-alt {
 		font-size: 1.75rem;
 	}
+
+	.heading--small {
+		font-size: 1.5rem;
+		margin-bottom: .75rem;
+	}
+
 
 }

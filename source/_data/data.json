@@ -17,9 +17,8 @@
 		"primaryHeading": "This guide will recommend best practices to ensure your email delivers an engaging message through a positive user experience and has the best chance to render correctly across all email clients, operating systems and devices.",
 		"heading": "Introduction"
 	},
-	"viewingAudience": {
-		"overlayColor": "133, 218, 223",
-		"backgroundImage": "../../images/audience.jpg",
-		"topicHeading": "Viewing Audience"
+	"imageCallout": {
+		"image": "http://placehold.it/680x355",
+		"alt": "Image Alt Text"
 	}
 }
