@@ -1,28 +1,26 @@
 {
-  "name": "SKELETOR",
-  "description": "Boilerplate and build tools for a front-end web project",
+  "name": "DEG | Email Design Guide",
+  "description": "DEG | Email Design Guide",
   "license": "MIT",
-  "version": "4.1.6",
-  "bugs": "https://github.com/degdigital/skeletor/issues",
-  "author": "Ryan Heap <heaper@gmail.com>",
+  "version": "1.0.0",
+  "bugs": "https://github.com/degdigital/email-design-guide",
+  "author": "Brian Graves <bgraves@degdigital.com>",
   "contributors": [
-    "Aaron Ladage <aladage@gmail.com>",
-    "Brian Graves <bgraves20@gmail.com>",
-    "Joseph Lawhorn <proselyte@gmail.com>"
+    "Molly Davis <mdavis@degdigital.com>",
+    "Chris Smith <csmith@degdigital.com>",
+    "Chris Stauffer <cstauffer@degdigital.com>"
   ],
   "keywords": [
-    "boilerplate",
-    "build tools",
-    "Pattern Lab",
-    "JSPM",
-    "PostCSS"
+    "Email",
+    "DEG",
+    "Design"
   ],
   "engines": {
     "node": ">=6.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/degdigital/skeletor.git"
+    "url": "https://github.com/degdigital/email-design-guide"
   },
   "dependencies": {
     "autoprefixer": "^6.4.0",
