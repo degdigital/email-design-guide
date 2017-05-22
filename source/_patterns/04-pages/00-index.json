@@ -11,5 +11,11 @@
 		"backgroundImage": "../../images/audience.jpg",
 		"topicHeading": "Viewing Audience",
 		"topicID": "viewing-audience"
+	},
+	"mobileFirst": {
+		"overlayColor": "206, 219, 0",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Mobile First",
+		"topicID": "mobile-first"
 	}
 }

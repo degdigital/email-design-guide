@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1495487037522,
+  "timestamp": 1495492657463,
   "graph": {
     "options": {
       "directed": true,
@@ -242,8 +242,8 @@
         "v": "02-components/03-topics/01-topic-section.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
-          "lineagePattern": "templates-viewing-audience"
+          "lineagePath": "../../patterns/03-templates-02-mobile-first/03-templates-02-mobile-first.html",
+          "lineagePattern": "templates-mobile-first"
         }
       },
       {
@@ -252,6 +252,22 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
           "lineagePattern": "templates-viewing-audience"
+        }
+      },
+      {
+        "v": "02-components/04-global/01-image-callout-iphone.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
+          "lineagePattern": "templates-viewing-audience"
+        }
+      },
+      {
+        "v": "02-components/04-global/02-bullet-flair.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-components-02-intro-01-guide-intro/02-components-02-intro-01-guide-intro.html",
+          "lineagePattern": "components-guide-intro"
         }
       },
       {
@@ -264,6 +280,14 @@
       },
       {
         "v": "03-templates/01-viewing-audience.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
+          "lineagePattern": "templates-index"
+        }
+      },
+      {
+        "v": "03-templates/02-mobile-first.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
@@ -306,6 +330,11 @@
         "value": {}
       },
       {
+        "v": "02-components/02-intro/01-guide-intro.mustache",
+        "w": "02-components/04-global/02-bullet-flair.mustache",
+        "value": {}
+      },
+      {
         "v": "02-components/03-topics/01-topic-section.mustache",
         "w": "02-components/03-topics/00-topic-section-header.mustache",
         "value": {}
@@ -331,6 +360,16 @@
         "value": {}
       },
       {
+        "v": "03-templates/01-viewing-audience.mustache",
+        "w": "02-components/04-global/01-image-callout-iphone.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-mobile-first.mustache",
+        "w": "02-components/03-topics/01-topic-section.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/00-index.mustache",
         "w": "02-components/00-frame/00-header.mustache",
         "value": {}
@@ -348,6 +387,11 @@
       {
         "v": "03-templates/00-index.mustache",
         "w": "03-templates/01-viewing-audience.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-index.mustache",
+        "w": "03-templates/02-mobile-first.mustache",
         "value": {}
       },
       {

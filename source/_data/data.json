@@ -17,8 +17,35 @@
 		"primaryHeading": "This guide will recommend best practices to ensure your email delivers an engaging message through a positive user experience and has the best chance to render correctly across all email clients, operating systems and devices.",
 		"heading": "Introduction"
 	},
+	"bulletFlair": [
+		{
+			"icon": "../../images/design-icon.svg",
+			"alt": "Design",
+			"class": "design"
+		},
+		{
+			"icon": "../../images/mobile-icon.svg",
+			"alt": "Mobile",
+			"class": "mobile"
+		},
+		{
+			"icon": "../../images/ui-icon.svg",
+			"alt": "UI",
+			"class": "ui"
+		}
+	],
 	"imageCallout": {
 		"image": "http://placehold.it/680x355",
 		"alt": "Image Alt Text"
-	}
+	},
+	"iphones": [
+		{
+			"image": "http://placehold.it/184x324",
+			"alt": "Image Alt Text"
+		},
+		{
+			"image": "http://placehold.it/184x324",
+			"alt": "Image Alt Text"
+		}
+	]
 }

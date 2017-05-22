@@ -27,17 +27,22 @@
 }
 
 @media (--medium) {
+
 	.intro {
 		padding: 2rem;
+		margin-bottom: 1rem;
 		background-image: url(../images/intro-1920x982.jpg);
 	}
 	.intro__description {
 		font-size: 1.63rem;
 	}
+
 }
 
 @media (min-width: 60em) {
+
 	.intro {
 		padding: 3rem;
 	}
+
 }
