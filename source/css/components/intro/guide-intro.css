@@ -1,0 +1,15 @@
+.guide-intro {
+	padding-bottom: 6rem;
+}
+
+.guide-intro__header {
+	margin: 2.5rem 0 3.5rem;
+}
+
+@media (--medium) {
+
+	.guide-intro__header {
+		margin: 6.5rem 0 6.5rem;
+	}
+
+}

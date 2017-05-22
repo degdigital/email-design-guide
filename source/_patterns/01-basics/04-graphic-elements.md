@@ -1,0 +1,1 @@
+Graphic elements such as icons and logos.

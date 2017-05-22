@@ -1,0 +1,25 @@
+.topic-section__header {
+	padding: 6rem 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.topic-section__heading {
+	color: var(--color-white);
+	&:before {
+		content: '';
+		display: block;
+		width: 3.54em;
+		height: .1em;
+		margin-bottom: .42em;
+		background-color: var(--color-white);
+	}
+}
+
+@media (--medium) {
+
+	.topic-section__header {
+		padding: 14.75rem 0;
+	}
+
+}

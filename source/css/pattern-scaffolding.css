@@ -1,0 +1,195 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+    box-sizing: border-box !important;
+    max-width: 100%;
+    padding: 0 1em 2rem;
+}
+
+/* Colors & Swatches */
+
+.sg-colors {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sg-colors li {
+    flex: auto;
+    min-width: 5em;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    & + li {
+        margin-top: .25rem;
+    }
+}
+
+.sg-swatch {
+    display: block;
+    width: 4em;
+    border-right: 1px solid #dcdcdc;
+}
+
+.sg-label {
+    display: block;
+    flex: 1;
+    padding: .75rem .88rem;
+    font-size: .75rem;
+    line-height: 1.13rem;
+    color: #828285;
+    background: #fff;
+    border-left-width: 0;
+    font-family: 'arimo', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+/* Typography */
+
+#basics-brand-fonts,
+#basics-headings {
+    .sg-pattern-example {
+        padding: 1.5rem;
+        background: #fff;
+        max-width: 55rem;
+    }
+}
+
+.sg-pattern-example-font__group + .sg-pattern-example-font__group {
+    margin-top: 2rem;
+}
+
+.sg-pattern-example-font__header {
+    margin: 0 0 1rem 0;
+    font-size: .75rem;
+    font-family: 'arimo', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color: #828285;
+    text-transform: uppercase;
+}
+
+.sg-pattern-example-font {
+    font-size: .9rem;
+    line-height: 1.3;
+    color: #000;
+    & + .sg-pattern-example-font {
+        margin-top: 1rem;
+    }
+}
+
+.sg-pattern-example-font-name {
+    font-size: 1.25rem;
+}
+
+#basics-paragraph {
+    .sg-pattern-example {
+        max-width: 55rem;
+    }
+}
+
+#style-guide-meta-style-guide {
+    display: none;
+}
+
+@media (min-width: 40em) {
+
+    .sg-colors {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 59.75rem;
+    }
+
+    .sg-colors li {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 2% 1rem 0;
+        width: 23.5%;
+        & + li {
+            margin-top: 0;
+        }
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+
+    .sg-swatch {
+        width: auto;
+        height: 8.5rem;
+        border-bottom: 1px solid #dcdcdc;
+        border-right: 0;
+    }
+
+    .sg-label {
+        border-left-width: 1px;
+        border-top-width: 1px;
+        padding-bottom: 2rem;
+        strong {
+            text-transform: uppercase;
+        }
+    }
+
+    #basics-brand-fonts,
+    #basics-headings {
+        .sg-pattern-example {
+            padding: 2.5rem;
+        }
+    }
+
+    .sg-pattern-example-font {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .sg-pattern-example-font-name {
+        font-size: 1.63rem;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    #sg-patterns {
+        padding: 2rem 3.25rem 4rem;
+    }
+
+    .sg-colors li {
+        width: 15%;
+        margin: 0 2% 1.25rem 0;
+        &:nth-child(4n) {
+            margin-right: 2%;
+        }
+        &:nth-child(6n) {
+            margin-right: 0;
+        }
+    }
+
+    #basics-brand-fonts {
+        .sg-pattern-example {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    .sg-pattern-example-font__group {
+        & + .sg-pattern-example-font__group {
+            margin-top: 0rem;
+        }
+        &:first-child {
+            margin-right: 8.75rem;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	padding: 1rem;
+}
+
+.wrapper--large {
+	max-width: var(--wrapper-width-large);
+}
+
+.wrapper--medium {
+	max-width: var(--wrapper-width-medium);
+}
+
+.wrapper--small {
+	max-width: var(--wrapper-width-small);
+}
+
+.wrapper--xsmall {
+	max-width: var(--wrapper-width-xsmall);
+}

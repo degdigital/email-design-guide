@@ -1,0 +1,25 @@
+{
+	"title" : "DEG Email Design Guide",
+	"description" : "[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae.",
+	"lang": "en-us",
+	"mainId" : "main-content",
+	"buttonClass": "",
+	"buttonText": "Learn more",
+	"primaryNav": [
+		{}, {}, {}, {}
+	],
+	"url" : "#",
+	"intro": {
+		"title": "DEG Email Design Guide",
+		"description": "[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae."
+	},
+	"guideIntro": {
+		"primaryHeading": "This guide will recommend best practices to ensure your email delivers an engaging message through a positive user experience and has the best chance to render correctly across all email clients, operating systems and devices.",
+		"heading": "Introduction"
+	},
+	"viewingAudience": {
+		"overlayColor": "133, 218, 223",
+		"backgroundImage": "../../images/audience.jpg",
+		"topicHeading": "Viewing Audience"
+	}
+}

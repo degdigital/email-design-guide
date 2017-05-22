@@ -1,0 +1,1 @@
+Color palette including primary and secondary colors.
