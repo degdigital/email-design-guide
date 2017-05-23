@@ -1,1 +1,0 @@
-# DEG | Email Design Guide
