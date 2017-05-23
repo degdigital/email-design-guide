@@ -1,14 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
 
-@font-face {
-	font-family: 'Ciutadella';
-	src: url('../fonts/ciutadella.eot');
-	src: url('../fonts/ciutadella.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/ciutadella.woff2') format('woff2'),
-		 url('../fonts/ciutadella.woff') format('woff'),
-		 url('../fonts/ciutadella.ttf') format('truetype');
-}
-
 body {
 	color: var(--color-text);
 	font-family: var(--font-family-primary);

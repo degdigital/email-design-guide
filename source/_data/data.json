@@ -6,7 +6,34 @@
 	"buttonClass": "",
 	"buttonText": "Learn more",
 	"primaryNav": [
-		{}, {}, {}, {}
+		{
+			"label": "Introduction",
+			"url": "guide-intro"
+		},
+		{
+			"label": "Viewing Audience",
+			"url": "viewing-audience"
+		},
+		{
+			"label": "Layout",
+			"url": "layout"
+		},
+		{
+			"label": "Navigation",
+			"url": "navigation"
+		},
+		{
+			"label": "Typography",
+			"url": "typography"
+		},
+		{
+			"label": "Images",
+			"url": "images"
+		},
+		{
+			"label": "Animation",
+			"url": "animation"
+		}
 	],
 	"url" : "#",
 	"intro": {

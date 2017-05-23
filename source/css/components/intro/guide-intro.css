@@ -1,5 +1,6 @@
 .guide-intro {
-	padding-bottom: 6rem;
+	position: relative;
+	background-color: var(--color-white);
 }
 
 .guide-intro__header {

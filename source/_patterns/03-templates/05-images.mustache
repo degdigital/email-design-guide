@@ -1,35 +1,37 @@
 {{# images }}
-	{{> components-topic-section }}
-	<div class="wrapper wrapper--small main-content">
-		{{> basics-heading-main(heading: '[IMAGES]') }}
-		<p>
-			It’s never a good idea to send an email comprised solely of images. Emails built this way can look spammy and unnecessarily increase the file size of the email. Always strive for a good image to text ratio.
-		</p>
-		<p>
-			Furthermore, <a href="#">43% of your subscribers are likely to have images off by default</a>. This is why it’s recommended to always include important information as text. Doing so ensures the primary message is still visible when images are disabled.
-		</p>
+	<section class="topic-section" id="{{ topicID }}">
+		{{> components-topic-section-header }}
+		<div class="wrapper wrapper--small main-content">
+			{{> basics-heading-main(heading: '[IMAGES]') }}
+			<p>
+				It’s never a good idea to send an email comprised solely of images. Emails built this way can look spammy and unnecessarily increase the file size of the email. Always strive for a good image to text ratio.
+			</p>
+			<p>
+				Furthermore, <a href="#">43% of your subscribers are likely to have images off by default</a>. This is why it’s recommended to always include important information as text. Doing so ensures the primary message is still visible when images are disabled.
+			</p>
 
-		{{> basics-heading-secondary(heading: 'Designing with Background Images') }}
-		<p>
-			Often times a designer will want to put text on top of a image. For the reasons above it’s recommended to use a background image instead of including the text inside the image. Background images in email are tricky, but completely possible.
-		</p>
-		<p>
-			Only advanced clients like Apple Mail and a few mobile clients support advanced CSS background declarations like position or repeat. Because of this, it’s best to assume the background image will appear repeated on both the X and Y axis and be left aligned. Designing for these default behaviors will reduce frustration when working with background images.
-		</p>
+			{{> basics-heading-secondary(heading: 'Designing with Background Images') }}
+			<p>
+				Often times a designer will want to put text on top of a image. For the reasons above it’s recommended to use a background image instead of including the text inside the image. Background images in email are tricky, but completely possible.
+			</p>
+			<p>
+				Only advanced clients like Apple Mail and a few mobile clients support advanced CSS background declarations like position or repeat. Because of this, it’s best to assume the background image will appear repeated on both the X and Y axis and be left aligned. Designing for these default behaviors will reduce frustration when working with background images.
+			</p>
 
-		{{> basics-heading-secondary(heading: 'CSS Instead of Images when Possible') }}
-		<p>
-			Using CSS in place of images, when possible, will dramatically reduce the file size of your email and decrease load times. Borders, gradients, drop shadows and rounded corners are all possible through CSS. If you’re of unsure of what CSS is supported in different clients, Campaign Monitor has a very handy CSS compatibility chart you can reference.
-		</p>
+			{{> basics-heading-secondary(heading: 'CSS Instead of Images when Possible') }}
+			<p>
+				Using CSS in place of images, when possible, will dramatically reduce the file size of your email and decrease load times. Borders, gradients, drop shadows and rounded corners are all possible through CSS. If you’re of unsure of what CSS is supported in different clients, Campaign Monitor has a very handy CSS compatibility chart you can reference.
+			</p>
 
-		{{> basics-heading-secondary(heading: 'Images as Touch Targets') }}
-		<p>
-			It’s a good idea to make images clickable, so long as the outbound link is relevant. Linked images provide readers a more visual way to navigate email. It’s also much easier to tap an image on mobile than text. Always evaluate touch targets for possible interference errors. If small targets are too close together, adjust their size and spacing.
-		</p>
+			{{> basics-heading-secondary(heading: 'Images as Touch Targets') }}
+			<p>
+				It’s a good idea to make images clickable, so long as the outbound link is relevant. Linked images provide readers a more visual way to navigate email. It’s also much easier to tap an image on mobile than text. Always evaluate touch targets for possible interference errors. If small targets are too close together, adjust their size and spacing.
+			</p>
 
-		{{> basics-heading-secondary(heading: 'ALT Attributes') }}
-		<p>
-			Sometimes images don’t load and sometimes visually impaired users miss important information contained within images. This is solved by including ALT attributes in your image declarations. ALT attributes provide information about the content of images when images are disabled or unable to load.
-		</p>
-	</div>
+			{{> basics-heading-secondary(heading: 'ALT Attributes') }}
+			<p>
+				Sometimes images don’t load and sometimes visually impaired users miss important information contained within images. This is solved by including ALT attributes in your image declarations. ALT attributes provide information about the content of images when images are disabled or unable to load.
+			</p>
+		</div>
+	</section>
 {{/ images }}

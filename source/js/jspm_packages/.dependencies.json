@@ -59,5 +59,13 @@
     "util": "npm:util@^0.10.3"
   },
   "npm:base64-js@1.2.0": {},
-  "npm:ieee754@1.1.8": {}
+  "npm:ieee754@1.1.8": {},
+  "github:DEGJS/scrollTo@1.0.1": {
+    "DEGJS/easing": "github:DEGJS/easing@^1.0.1"
+  },
+  "github:DEGJS/easing@1.0.1": {},
+  "github:DEGJS/scrollTracker@1.0.0": {
+    "DEGJS/eventAggregator": "github:DEGJS/eventAggregator@^1.0.2"
+  },
+  "github:DEGJS/eventAggregator@1.0.2": {}
 }

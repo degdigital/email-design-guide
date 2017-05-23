@@ -6,8 +6,7 @@
 	--color-gray-darkest: #333333;
 	--color-gray-darker: #4a4a4a;
 	--color-gray-dark: #626262;
-	--color-gray-lightest: #f9f9f9;
-
+	--color-gray: #666;
 	--color-gray-lightest: #eee;
 
 	--color-blue: #0075c9;
@@ -24,7 +23,6 @@
 	--color-text: var(--color-gray-dark);
 
 	--font-family-primary: Arimo, Helvetica, Arial, sans-serif;
-	--font-family-secondary: Ciutadella, Helvetica, Arial, sans-serif;
 	--base-font-size: 1em;
 	--font-weight-primary: 400;
 	--font-weight-secondary: normal;

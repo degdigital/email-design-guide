@@ -1,5 +1,9 @@
+.topic-section {
+	margin-bottom: 2.38rem;
+}
+
 .topic-section__header {
-	margin: 2.38rem 0 2.38rem;
+	margin: 0 0 2.38rem;
 	padding: 6rem 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -20,8 +24,12 @@
 
 @media (--medium) {
 
+	.topic-section {
+		margin-bottom: 5.88rem;
+	}
+
 	.topic-section__header {
-		margin: 5.88rem 0 4.88rem;
+		margin: 0 0 4.88rem;
 		padding: 14.75rem 0;
 	}
 

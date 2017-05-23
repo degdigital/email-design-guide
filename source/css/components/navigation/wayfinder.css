@@ -1,0 +1,62 @@
+.wayfinder {
+	display: none;
+}
+
+.wayfinder__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.wayfinder__item {
+	& + .wayfinder__item { margin-top: .5rem }
+}
+
+.wayfinder__link {
+	position: relative;
+	display: block;
+	min-width: 10rem;
+	font-weight: bold;
+	color: transparent;
+	transition: all var(--anim-duration-fast) var(--anim-easing);
+	&:after {
+		content: '';
+		position: absolute;
+		right: -1.75em;
+		top: .37em;
+		width: .88em;
+		height: .88em;
+		font-weight: bold;
+		border-radius: 50%;
+		background-color: var(--color-gray);
+		border: 1px solid transparent;
+		transition: all var(--anim-duration-fast) var(--anim-easing);
+	}
+	&.is-active,
+	&:hover {
+		color: transparent;
+		&:after {
+			right: -1.88em;
+			top: .25em;
+			background-color: transparent;
+			border-color: var(--color-gray-darkest);
+			width: 1.13em;
+			height: 1.13em;
+		}
+	}
+	&.is-active { cursor: default; }
+}
+
+@media (min-width: 75em) {
+
+	.wayfinder {
+		display: block;
+		position: fixed;
+		top: 11rem;
+		left: 50%;
+		margin-left: 24rem;
+		&.is-active { opacity: 1; }
+	}
+
+}
