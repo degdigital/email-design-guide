@@ -1,7 +1,12 @@
 {{# imageCallout }}
-<div class="image-callout">
+<figure class="full-width image-callout{{# caption }} image-callout--caption{{/ caption }}">
 	<div class="image-callout__wrapper">
 		<img class="image-callout__hero" src="{{ image }}" alt="{{ alt }}">
 	</div>
-</div>
+	{{# caption }}
+	<figcaption class="image-callout__caption">
+		{{ caption }}
+	</figcaption>
+	{{/ caption }}
+</figure>
 {{/ imageCallout }}

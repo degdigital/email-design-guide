@@ -1,0 +1,52 @@
+{{# typography }}
+	{{> components-topic-section }}
+	<div class="wrapper wrapper--small main-content">
+		{{> basics-heading-main(heading: '[TYPOGRAPHY]') }}
+		<p>
+			Typography is the one thing that is rendered consistently across all email clients. Some clients block images by default, so often times typography is the only thing a reader sees on first load.
+		</p>
+
+		{{> basics-heading-secondary(heading: 'Selecting Fonts') }}
+		<p>
+			Sticking with common cross-platform fonts for email is the easiest way to ensure consistent rendering across clients. When defining fonts, always include a full font stack by declaring fallbacks in your CSS.
+		</p>
+		<p>
+			For example, if you want to use Helvetica Neue, you would do so with: ‘font-family: 'helvetica neue', helvetica, arial, sans-serif;’. Defining fallbacks ensures that even if a subscriber doesn’t have Helvetica Neue on their system, the email will still be rendered with a comparable font. In this case, helvetica, arial or the systems default sans-serif font.
+		</p>
+		<ul>
+			<li>
+				<strong>The following are email safe sans-serif fonts:</strong>
+				Arial, Arial Black, Tahoma, Trebuchet MS, Verdana, Century Gothic, Geneva, Lucida, Lucida Sans, Lucida Grande.
+			</li>
+			<li>
+				<strong>The following are email safe serif fonts:</strong>
+				Courier, Courier New, Georgia, Times, Times New Roman, MS Serif, New York, Palatino, Palatino Linotype.
+			</li>
+			<li>
+				<strong>The following are email safe monospace fonts:</strong>
+				Courier, Courier New, Lucida, Console Monaco.
+			</li>
+		</ul>
+
+		{{> basics-heading-secondary(heading: 'Using Custom Brand Fonts') }}
+		<p>
+			A custom font, also called a web font, is as it sounds: a non-standard, custom brand font. Custom fonts increase creative options for designers and brand identity, however they are very experimental in HTML email and implementation will present some unique challenges.
+		</p>
+		<p>
+			For starters, it’s important to have an approximate fallback font defined. This fallback font will render if a subscriber opens your email on a client that doesn’t support web fonts.
+		</p>
+		<p>
+			Most of the time the fallback font will render at varied heights and/or widths than the custom font. This fallback must be tested so that the email doesn’t break in the clients using it.
+		</p>
+
+		{{> components-image-callout(image: 'http://placehold.it/680x355', alt: 'Alt Text') }}
+
+		{{> basics-heading-secondary(heading: 'Faking Custom Brand Fonts') }}
+		<p>
+			If you are using a custom brand font for small areas of static text like section headers, and you don’t want to use a fallback font, consider saving out the text as an image. This will give the appearance of a custom font, even in clients that lack support.
+		</p>
+		<p>
+			However, do not use this technique for large areas of text or text that needs to be changed regularly. Due to the nature of images in email, as well as the constraints of images in responsive design, this technique is only recommended when there is no other alternative and should be used with caution.
+		</p>
+	</div>
+{{/ typography }}

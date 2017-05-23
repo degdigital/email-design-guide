@@ -1,4 +1,4 @@
-<div class="image-callout image-callout--iphone">
+<figure class="full-width mage-callout image-callout--iphone{{# caption }} image-callout--caption{{/ caption }}">
 	<div class="image-callout__wrapper image-callout__wrapper--iphone">
 		{{# iphones }}
 		<div class="iphone">
@@ -7,4 +7,9 @@
 		</div>
 		{{/ iphones }}
 	</div>
-</div>
+	{{# caption }}
+	<figcaption class="image-callout__caption">
+		{{ caption }}
+	</figcaption>
+	{{/ caption }}
+</figure>

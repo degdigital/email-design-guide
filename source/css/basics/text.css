@@ -17,7 +17,7 @@ body {
 	line-height: 1.5;
 }
 
-p {
+p, ul, ol {
 	line-height: 1.75;
 	margin: 0 0 1.75rem 0;
 	&:last-child { margin-bottom: 0; }
@@ -25,8 +25,11 @@ p {
 
 @media (--medium) {
 
-	p {
-		margin: 0 0 2.5rem 0;
+	p, ul, ol {
+		margin: 0 0 2rem 0;
+		& + .heading--small { margin-top: 4rem; }
+		& + .heading--medium { margin-top: 5rem; }
 	}
+
 
 }

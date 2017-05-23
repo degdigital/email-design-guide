@@ -14,7 +14,7 @@
 		"description": "[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae."
 	},
 	"guideIntro": {
-		"primaryHeading": "This guide will recommend best practices to ensure your email delivers an engaging message through a positive user experience and has the best chance to render correctly across all email clients, operating systems and devices.",
+		"primaryHeading": "This guide assumes that you have selected a target audience and written content for your email. While there are marketing techniques on display throughout this document, this guide is intended to be used specifically by designers and developers.",
 		"heading": "Introduction"
 	},
 	"bulletFlair": [

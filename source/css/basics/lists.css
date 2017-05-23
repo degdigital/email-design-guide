@@ -1,7 +1,7 @@
-ul {
-
+ul, ol {
+	padding: 0 0 0 2rem;
 }
 
-li {
-	
+li + li {
+	margin-top: .75rem;
 }

@@ -17,6 +17,10 @@
 	--color-teal: #85dadf;
 	--color-teal-light: color(var(--color-teal) tint(20%));
 
+	--color-green: #cedb00;
+
+	--color-orange: #f98e2b;
+
 	--color-text: var(--color-gray-dark);
 
 	--font-family-primary: Arimo, Helvetica, Arial, sans-serif;

@@ -1,10 +1,13 @@
 .image-callout {
+	margin: 1.5rem 0 2.5rem;
 	background-image: linear-gradient(to top, var(--color-gray-lightest) 0%,var(--color-gray-lightest) 80%,var(--color-white) 80%,var(--color-white) 100%);
+	&:last-child { margin-bottom: 0; }
+	& + .heading { margin-top: 4rem; }
 }
 
 .image-callout__wrapper {
 	max-width: 44.5rem;
-	margin: 1.5rem auto 2.5rem;
+	margin: 0 auto;
 	padding: 0 1rem;
 }
 
@@ -35,8 +38,9 @@
 
 @media (--medium) {
 
-	.image-callout__wrapper {
-		margin: 3.5rem auto 4.5rem;
+	.image-callout {
+		margin: 3.5rem 0 4.5rem;
+		& + .heading { margin-top: 6rem; }
 	}
 
 }

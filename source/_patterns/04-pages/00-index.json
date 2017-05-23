@@ -12,10 +12,40 @@
 		"topicHeading": "Viewing Audience",
 		"topicID": "viewing-audience"
 	},
-	"mobileFirst": {
+	"layout": {
 		"overlayColor": "206, 219, 0",
 		"backgroundImage": "../../images/mobile.jpg",
-		"topicHeading": "Mobile First",
-		"topicID": "mobile-first"
+		"topicHeading": "Layout",
+		"topicID": "layout"
+	},
+	"navigation": {
+		"overlayColor": "0, 117, 201",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Navigation",
+		"topicID": "navigation"
+	},
+	"typography": {
+		"overlayColor": "249, 142, 43",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Typography",
+		"topicID": "typography"
+	},
+	"images": {
+		"overlayColor": "133, 218, 223",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Images",
+		"topicID": "images"
+	},
+	"animation": {
+		"overlayColor": "206, 219, 0",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Animation",
+		"topicID": "animation"
+	},
+	"contentHierarchy": {
+		"overlayColor": "0, 117, 201",
+		"backgroundImage": "../../images/mobile.jpg",
+		"topicHeading": "Content Hierarchy",
+		"topicID": "contentHierarchy"
 	}
 }

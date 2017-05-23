@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1495492657463,
+  "timestamp": 1495555567214,
   "graph": {
     "options": {
       "directed": true,
@@ -72,16 +72,16 @@
         "v": "01-basics/02-typography/_heading-main.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
-          "lineagePattern": "templates-viewing-audience"
+          "lineagePath": "../../patterns/03-templates-06-animation/03-templates-06-animation.html",
+          "lineagePattern": "templates-animation"
         }
       },
       {
         "v": "01-basics/02-typography/_heading-secondary.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
-          "lineagePattern": "templates-viewing-audience"
+          "lineagePath": "../../patterns/03-templates-06-animation/03-templates-06-animation.html",
+          "lineagePattern": "templates-animation"
         }
       },
       {
@@ -112,12 +112,6 @@
       },
       {
         "v": "01-basics/04-graphic-elements/01-favicon.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-basics/04-graphic-elements/02-image-container.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -242,24 +236,22 @@
         "v": "02-components/03-topics/01-topic-section.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-02-mobile-first/03-templates-02-mobile-first.html",
-          "lineagePattern": "templates-mobile-first"
+          "lineagePath": "../../patterns/03-templates-06-animation/03-templates-06-animation.html",
+          "lineagePattern": "templates-animation"
         }
       },
       {
         "v": "02-components/04-global/00-image-callout.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
-          "lineagePattern": "templates-viewing-audience"
+          "lineagePath": "../../patterns/03-templates-06-animation/03-templates-06-animation.html",
+          "lineagePattern": "templates-animation"
         }
       },
       {
         "v": "02-components/04-global/01-image-callout-iphone.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-viewing-audience/03-templates-01-viewing-audience.html",
-          "lineagePattern": "templates-viewing-audience"
+          "compileState": "clean"
         }
       },
       {
@@ -287,7 +279,39 @@
         }
       },
       {
-        "v": "03-templates/02-mobile-first.mustache",
+        "v": "03-templates/02-layout.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
+          "lineagePattern": "templates-index"
+        }
+      },
+      {
+        "v": "03-templates/03-navigation.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
+          "lineagePattern": "templates-index"
+        }
+      },
+      {
+        "v": "03-templates/04-typography.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
+          "lineagePattern": "templates-index"
+        }
+      },
+      {
+        "v": "03-templates/05-images.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
+          "lineagePattern": "templates-index"
+        }
+      },
+      {
+        "v": "03-templates/06-animation.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-00-index/03-templates-00-index.html",
@@ -360,13 +384,93 @@
         "value": {}
       },
       {
-        "v": "03-templates/01-viewing-audience.mustache",
-        "w": "02-components/04-global/01-image-callout-iphone.mustache",
+        "v": "03-templates/02-layout.mustache",
+        "w": "02-components/03-topics/01-topic-section.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/02-mobile-first.mustache",
+        "v": "03-templates/02-layout.mustache",
+        "w": "01-basics/02-typography/_heading-main.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-layout.mustache",
+        "w": "01-basics/02-typography/_heading-secondary.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-layout.mustache",
+        "w": "02-components/04-global/00-image-callout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/03-navigation.mustache",
         "w": "02-components/03-topics/01-topic-section.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/03-navigation.mustache",
+        "w": "01-basics/02-typography/_heading-main.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/03-navigation.mustache",
+        "w": "01-basics/02-typography/_heading-secondary.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-typography.mustache",
+        "w": "02-components/03-topics/01-topic-section.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-typography.mustache",
+        "w": "01-basics/02-typography/_heading-main.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-typography.mustache",
+        "w": "01-basics/02-typography/_heading-secondary.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-typography.mustache",
+        "w": "02-components/04-global/00-image-callout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/05-images.mustache",
+        "w": "02-components/03-topics/01-topic-section.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/05-images.mustache",
+        "w": "01-basics/02-typography/_heading-main.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/05-images.mustache",
+        "w": "01-basics/02-typography/_heading-secondary.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/06-animation.mustache",
+        "w": "02-components/03-topics/01-topic-section.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/06-animation.mustache",
+        "w": "01-basics/02-typography/_heading-main.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/06-animation.mustache",
+        "w": "01-basics/02-typography/_heading-secondary.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/06-animation.mustache",
+        "w": "02-components/04-global/00-image-callout.mustache",
         "value": {}
       },
       {
@@ -391,7 +495,27 @@
       },
       {
         "v": "03-templates/00-index.mustache",
-        "w": "03-templates/02-mobile-first.mustache",
+        "w": "03-templates/02-layout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-index.mustache",
+        "w": "03-templates/03-navigation.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-index.mustache",
+        "w": "03-templates/04-typography.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-index.mustache",
+        "w": "03-templates/05-images.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-index.mustache",
+        "w": "03-templates/06-animation.mustache",
         "value": {}
       },
       {
