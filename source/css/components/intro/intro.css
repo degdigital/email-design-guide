@@ -19,12 +19,19 @@
 }
 
 .intro__title {
-	margin-bottom: 2.13rem;
+	margin-bottom: 1.5rem;
 }
 
 .intro__description {
-	font-size: 1.25rem;
 	line-height: 1.4;
+}
+
+@media (--small) {
+
+	.intro__description {
+		font-size: 1.25rem;
+	}
+
 }
 
 @media (--medium) {
@@ -34,6 +41,11 @@
 		margin-bottom: 1rem;
 		background-image: url(../images/intro-1920x982.jpg);
 	}
+
+	.intro__title {
+		margin-bottom: 2.13rem;
+	}
+
 	.intro__description {
 		font-size: 1.63rem;
 	}

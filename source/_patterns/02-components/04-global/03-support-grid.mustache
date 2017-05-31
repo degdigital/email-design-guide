@@ -1,0 +1,32 @@
+{{# supportGrid }}
+<table class="support-grid">
+	<thead class="support-grid__header">
+		<tr>
+			<td class="support-grid__heading">Email Client</td>
+			<td class="support-grid__heading">Market Share</td>
+			<td class="support-grid__heading">Supported</td>
+		</tr>
+	</thead>
+	<tbody class="support-grid__body">
+		{{# categories }}
+		<tr>
+			<td class="support-grid__category">{{ category}}</td>
+		</tr>
+		{{# clients }}
+		<tr>
+			<td class="support-grid__name">{{ clientName }}</td>
+			<td class="support-grid__share">{{ marketShare }}</td>
+			<td class="support-grid__supported">
+				{{# supported }}
+					yes
+				{{/ supported }}
+				{{^ supported }}
+					no
+				{{/ supported }}
+			</td>
+		</tr>
+		{{/ clients }}
+		{{/ categories }}
+	</tbody>
+</table>
+{{/ supportGrid }}

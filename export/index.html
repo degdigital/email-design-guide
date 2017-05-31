@@ -83,13 +83,20 @@
                     <h1 class="wrapper wrapper--small heading heading--large-alt topic-section__heading">Viewing Audience</h1>
                 </header>
                 <div class="wrapper wrapper--small main-content">
-                    <h1 class="heading heading--medium ">Reading Environment</h1>
+                    <h1 class="heading heading--medium ">What email clients should be supported?</h1>
                     <p>
-                        [READING ENVIRONMENT DESCRIPTION]
+                        A common question when it comes to designing and building emails is "What email clients do I need to support?" DEG looks at 2 different things to determine our typical support.
                     </p>
-                    <h2 class="heading heading--small ">The preview pane</h2>
+                    <ol>
+                        <li>Email Client Market Share, which is a breakdown of opens by email client.</li>
+                        <li>In addition to the email client market share, we also look at the breakdown of desktop, mobile, and webmail client opens happening in a given circumstance.</li>
+                    </ol>
+                    <h2 class="heading heading--small ">Email Client Market Share</h2>
                     <p>
-                        Most desktop clients utilize a small window to show a portion of the email on first load. This window is commonly referred to as the preview pane. It’s important to consider that although you are designing for a large screen, many readers will only see the beginning of your email. Consider designing your most interesting and engaging content higher in your email.
+                        DEG uses the concept of Graded Email Client Support, which defines the current set of email clients that should receive a verified, usable experience. However, trying to deliver the same "A-grade" experience across all tested email clients is neither cost effective nor best practice and forces you to design and develop for the lowest common denominator. We support a tiered approach to design, development, and testing that will allow us to deliver the best experience possible to each individual user.
+                    </p>
+                    <p>
+                        The support grid is only to be regarded as DEG’s baseline suggestion. Because support needs may vary widely based on platform, vertical, or industry, each project should try to define any special cases needed to best serve their subscribers and stakeholders.
                     </p>
                     <figure class="full-width image-callout">
                         <div class="image-callout__wrapper">
@@ -98,21 +105,101 @@
                     </figure>
                     <h2 class="heading heading--small ">Webmail vs Desktop vs Mobile</h2>
                     <p>
-                        Webmail vs Desktop vs Mobile (Graphic - Statistical graph of open rates)
+                        Webmail vs Desktop vs Mobile (Graphic - Statistical graph of open rates)Because this may vary widely based on platform, vertical, or industry it's important to know what....[FINISH]
                     </p>
                     <figure class="full-width image-callout">
                         <div class="image-callout__wrapper">
                             <img class="image-callout__hero" src="http:&#x2F;&#x2F;placehold.it&#x2F;680x355" alt="Image Alt Text">
                         </div>
                     </figure>
-                    <h1 class="heading heading--medium ">Which Email Clients to Support</h1>
+                    <h2 class="heading heading--small ">What does support mean?</h2>
                     <p>
-                        DEG looks at 2 different things to determine this.
+                        Support does not mean that every user gets the same thing. Expecting two users using different email clients to have an identical experience fails to embrace the nature of email. In fact, requiring the same experience for all users creates an artificial barrier to participation.
                     </p>
-                    <ol>
-                        <li>Email Client Market Share, which is a breakdown of opens by email client.</li>
-                        <li>The reading environment split, which is the breakdown of desktop, mobile, and webmail clients</li>
-                    </ol>
+                    <p>
+                        An appropriate support strategy allows users to consume as much visual and interactive richness as their environment can support. This approach—commonly referred to as progressive enhancement — builds a rich experience on top of an accessible core, without compromising that core. Progressive enhancement is a core concept of DEG’s Email Client Support.
+                    </p>
+                    <h1 class="heading heading--medium ">Baseline Support</h1>
+                    <p>
+                        [BASELINE SUPPORT GRID DESCRIPTION]
+                    </p>
+                    <table class="support-grid">
+                        <thead class="support-grid__header">
+                            <tr>
+                                <td class="support-grid__heading">Email Client</td>
+                                <td class="support-grid__heading">Market Share</td>
+                                <td class="support-grid__heading">Supported</td>
+                            </tr>
+                        </thead>
+                        <tbody class="support-grid__body">
+                            <tr>
+                                <td class="support-grid__category">Mobile Clients</td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">iPhone - iOS 10</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">iPhone - iOS 9</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">iPhone - iOS 8</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">iPad - iOS 10</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">Android Gmail</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__category">Desktop Clients</td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">Apple Mail 10</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__category">Webmail Clients</td>
+                            </tr>
+                            <tr>
+                                <td class="support-grid__name">Gmail</td>
+                                <td class="support-grid__share">20%</td>
+                                <td class="support-grid__supported">
+                                    yes
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 class="heading heading--medium ">Reading Environment</h1>
+                    <p>
+                        [READING ENVIRONMENT DESCRIPTION]
+                    </p>
+                    <h2 class="heading heading--small ">The preview pane</h2>
+                    <p>
+                        Most desktop clients utilize a small window to show a portion of the email on first load. This window is commonly referred to as the preview pane. It’s important to consider that although you are designing for a large screen, many readers will only see the beginning of your email. Consider designing your most interesting and engaging content higher in your email.
+                    </p>
                     <figure class="full-width image-callout">
                         <div class="image-callout__wrapper">
                             <img class="image-callout__hero" src="http:&#x2F;&#x2F;placehold.it&#x2F;680x355" alt="Image Alt Text">

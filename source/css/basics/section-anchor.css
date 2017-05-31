@@ -4,7 +4,7 @@
 	left: auto;
 	right: auto;
 	display: block;
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	color: var(--color-white);
 
@@ -43,4 +43,12 @@
 	&:after {
 		border-color: var(--color-teal);
 	}
+}
+
+@media (--medium) {
+
+	.section-anchor {
+		font-size: 1.75rem;
+	}
+
 }

@@ -74,5 +74,59 @@
 			"image": "http://placehold.it/184x324",
 			"alt": "Image Alt Text"
 		}
-	]
+	],
+	"supportGrid": {
+		"categories": [
+			{
+				"category": "Mobile Clients",
+				"clients": [
+					{
+						"clientName": "iPhone - iOS 10",
+						"marketShare": "20%",
+						"supported": true
+					},
+					{
+						"clientName": "iPhone - iOS 9",
+						"marketShare": "20%",
+						"supported": true
+					},
+					{
+						"clientName": "iPhone - iOS 8",
+						"marketShare": "20%",
+						"supported": true
+					},
+					{
+						"clientName": "iPad - iOS 10",
+						"marketShare": "20%",
+						"supported": true
+					},
+					{
+						"clientName": "Android Gmail",
+						"marketShare": "20%",
+						"supported": true
+					}
+				]
+			},
+			{
+				"category": "Desktop Clients",
+				"clients": [
+					{
+						"clientName": "Apple Mail 10",
+						"marketShare": "20%",
+						"supported": true
+					}
+				]
+			},
+			{
+				"category": "Webmail Clients",
+				"clients": [
+					{
+						"clientName": "Gmail",
+						"marketShare": "20%",
+						"supported": true
+					}
+				]
+			}
+		]
+	}
 }
