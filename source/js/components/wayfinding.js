@@ -1,5 +1,5 @@
-import scrollTracker from "DEGJS/scrollTracker";
-import eventAggregator from "DEGJS/eventAggregator";
+import scrollTracker from 'DEGJS/scrollTracker';
+import eventAggregator from 'DEGJS/eventAggregator';
 
 let wayfinding = function() {
 
@@ -15,8 +15,8 @@ let wayfinding = function() {
 			scrollTrackerInst.trackElement(document.querySelector(elToTrack),
 				{
 					offset: {
-						top: "585px",
-						bottom: "585px"
+						top: '99vh',
+						bottom: '90vh'
 					}
 				}
 			);
@@ -25,8 +25,7 @@ let wayfinding = function() {
 
 	function onElementInViewportChange(e) {
 
-	 	if(e.isInViewport) {
-			wayfinderEl.classList.add('is-active');
+		if(e.isInViewport) {
 			let element = e.element.getAttribute('id'),
 				wayfinderLink = document.querySelector('.wayfinder__link--' + element);
 
@@ -34,13 +33,13 @@ let wayfinding = function() {
 				el.classList.remove('is-active');
 			});
 			wayfinderLink.classList.add('is-active');
-	 	} else {
-	 		wayfinderEl.classList.remove('is-active');
-	 	}
+		} else {
+			wayfinderEl.classList.remove('is-active');
+		}
 
 	}
 
 	init();
-}
+};
 
 export default wayfinding;

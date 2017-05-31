@@ -1,1 +1,37 @@
-/* Primary Nav Styles */
+.primary-nav {
+	position: fixed;
+	top: 0;
+	width: 19.75rem;
+	max-width: 100%;
+	min-height: 100vh;
+	padding: 6.75rem 2.5rem 0 2.5rem;
+	background-color: color(var(--color-blue) a(93%));
+	transform: translateX(-100%);
+	transition: transform var(--anim-duration-fast) var(--anim-easing);
+}
+
+.primary-nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.primary-nav__item {
+	font-size: 1.13rem;
+}
+
+.primary-nav__link {
+	color: var(--color-white);
+	&:hover,
+	&:focus {
+		color: var(--color-white);
+		text-decoration: underline;
+		text-decoration-skip: ink;
+	}
+}
+
+.is-open {
+	.primary-nav {
+		transform: translateX(0);
+	}
+}

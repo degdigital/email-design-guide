@@ -34,10 +34,10 @@
 
 	--border-radius: 0.25rem;
 
-	--anim-duration-fast: .5s;
-	--anim-duration-medium: 1s;
-	--anim-duration-slow: 3s;
-	--anim-delay-medium-half: .5s;
+	--anim-duration-fast: .25s;
+	--anim-duration-medium: .5s;
+	--anim-duration-slow: 1s;
+	--anim-delay: .5s;
 	--anim-easing: ease-out;
 
 

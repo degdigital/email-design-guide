@@ -33,9 +33,7 @@
 		border: 1px solid transparent;
 		transition: all var(--anim-duration-fast) var(--anim-easing);
 	}
-	&.is-active,
-	&:hover {
-		color: transparent;
+	&.is-active {
 		&:after {
 			right: -1.88em;
 			top: .25em;
@@ -43,9 +41,12 @@
 			border-color: var(--color-gray-darkest);
 			width: 1.13em;
 			height: 1.13em;
+			cursor: default;
 		}
 	}
-	&.is-active { cursor: default; }
+	&:hover {
+		color: transparent;
+	}
 }
 
 @media (min-width: 75em) {

@@ -1,3 +1,44 @@
+System.register('components/siteNav.js', [], function (_export) {
+	'use strict';
+
+	var siteNav;
+	return {
+		setters: [],
+		execute: function () {
+			siteNav = function siteNav(config) {
+
+				if (config.headerEl !== null) {
+					(function () {
+						var init = function init() {
+							navTriggerEl.addEventListener('click', navToggle);
+							primaryNavEl.addEventListener('click', closeNav);
+						};
+
+						var navToggle = function navToggle(e) {
+							e.preventDefault();
+							config.bodyEl.classList.toggle('is-open');
+						};
+
+						var closeNav = function closeNav(e) {
+							var clickedEl = e.target;
+							if (clickedEl.classList.contains('js-section-anchor')) {
+								navToggle(e);
+							}
+						};
+
+						var navTriggerEl = config.headerEl.querySelector('.js-primary-nav__toggle'),
+						    primaryNavEl = config.headerEl.querySelector('.js-primary-nav__list');
+
+						init();
+					})();
+				}
+			};
+
+			_export('default', siteNav);
+		}
+	};
+});
+
 System.register("github:DEGJS/easing@1.0.1/easing.js", [], function (_export) {
 	/* */
 	"use strict";
@@ -1255,19 +1296,19 @@ System.register("github:DEGJS/eventAggregator@1.0.2.js", ["github:DEGJS/eventAgg
   };
 });
 
-System.register("components/wayfinding.js", ["npm:babel-runtime@5.8.38/core-js/array/from.js", "github:DEGJS/scrollTracker@1.0.0.js", "github:DEGJS/eventAggregator@1.0.2.js"], function (_export) {
+System.register('components/wayfinding.js', ['npm:babel-runtime@5.8.38/core-js/array/from.js', 'github:DEGJS/scrollTracker@1.0.0.js', 'github:DEGJS/eventAggregator@1.0.2.js'], function (_export) {
 	var _Array$from, scrollTracker, eventAggregator, wayfinding;
 
 	return {
 		setters: [function (_npmBabelRuntime5838CoreJsArrayFromJs) {
-			_Array$from = _npmBabelRuntime5838CoreJsArrayFromJs["default"];
+			_Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
 		}, function (_githubDEGJSScrollTracker100Js) {
-			scrollTracker = _githubDEGJSScrollTracker100Js["default"];
+			scrollTracker = _githubDEGJSScrollTracker100Js['default'];
 		}, function (_githubDEGJSEventAggregator102Js) {
-			eventAggregator = _githubDEGJSEventAggregator102Js["default"];
+			eventAggregator = _githubDEGJSEventAggregator102Js['default'];
 		}],
 		execute: function () {
-			"use strict";
+			'use strict';
 
 			wayfinding = function wayfinding() {
 
@@ -1282,8 +1323,8 @@ System.register("components/wayfinding.js", ["npm:babel-runtime@5.8.38/core-js/a
 						var elToTrack = el.getAttribute('href');
 						scrollTrackerInst.trackElement(document.querySelector(elToTrack), {
 							offset: {
-								top: "585px",
-								bottom: "585px"
+								top: '99vh',
+								bottom: '90vh'
 							}
 						});
 					});
@@ -1292,7 +1333,6 @@ System.register("components/wayfinding.js", ["npm:babel-runtime@5.8.38/core-js/a
 				function onElementInViewportChange(e) {
 
 					if (e.isInViewport) {
-						wayfinderEl.classList.add('is-active');
 						var element = e.element.getAttribute('id'),
 						    wayfinderLink = document.querySelector('.wayfinder__link--' + element);
 
@@ -1308,17 +1348,19 @@ System.register("components/wayfinding.js", ["npm:babel-runtime@5.8.38/core-js/a
 				init();
 			};
 
-			_export("default", wayfinding);
+			_export('default', wayfinding);
 		}
 	};
 });
 
-System.register("main.js", ["components/sectionAnchors.js", "components/wayfinding.js"], function (_export) {
+System.register("main.js", ["components/siteNav.js", "components/sectionAnchors.js", "components/wayfinding.js"], function (_export) {
 	"use strict";
 
-	var sectionAnchors, wayfinding, main;
+	var siteNav, sectionAnchors, wayfinding, main;
 	return {
-		setters: [function (_componentsSectionAnchorsJs) {
+		setters: [function (_componentsSiteNavJs) {
+			siteNav = _componentsSiteNavJs["default"];
+		}, function (_componentsSectionAnchorsJs) {
 			sectionAnchors = _componentsSectionAnchorsJs["default"];
 		}, function (_componentsWayfindingJs) {
 			wayfinding = _componentsWayfindingJs["default"];
@@ -1326,9 +1368,19 @@ System.register("main.js", ["components/sectionAnchors.js", "components/wayfindi
 		execute: function () {
 			main = function main() {
 
+				var bodyEl = document.body,
+				    headerEl = bodyEl.querySelector('.site-header'),
+				    config = {
+					bodyEl: bodyEl,
+					headerEl: headerEl
+				};
+
 				function init() {
+					bodyEl.classList.add('js');
+
 					sectionAnchors();
 					wayfinding();
+					siteNav(config);
 				}
 
 				init();

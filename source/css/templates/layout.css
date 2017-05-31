@@ -1,6 +1,5 @@
 .main {
 	overflow-x: hidden;
-	margin-bottom: 4rem;
 	background-color: var(--color-white);
 }
 
@@ -33,12 +32,4 @@
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-}
-
-@media (--medium) {
-
-	.main {
-		margin-bottom: 6rem;
-	}
-
 }

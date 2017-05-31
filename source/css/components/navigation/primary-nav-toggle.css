@@ -1,0 +1,69 @@
+.primary-nav__toggle,
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+	display: block;
+	width: 2.13rem;
+}
+
+.primary-nav__toggle {
+	position: fixed;
+	cursor: pointer;
+	margin: 1.75rem 0 0 1.75rem;
+	padding: .75rem 0;
+	background-color: transparent;
+	border: 0;
+	transition: transform var(--anim-duration-fast) var(--anim-easing);
+	transition-delay: .005s;
+
+	&:hover,
+	&:focus {
+		outline: 0;
+		.hamburger {
+			&:before { transform: translateY(-.13em); }
+			&:after { transform: translateY(.13em); }
+		}
+	}
+}
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+	position: absolute;
+	height: .06rem;
+	background-color: var(--color-white);
+	box-shadow: 0 .06rem 0 color(var(--color-white) a(60%));
+}
+
+.hamburger {
+	&:before,
+	&:after {
+		content: '';
+		transition: transform var(--anim-duration-medium) var(--anim-easing);
+	}
+
+	&:before { top: -.75rem; }
+	&:after { bottom: -.75rem; }
+}
+
+.is-open {
+	.primary-nav__toggle {
+		transform: translateX(14rem);
+	}
+	.hamburger,
+	.primary-nav__toggle:hover .hamburger,
+	.primary-nav__toggle:focus .hamburger {
+		background-color: transparent;
+		box-shadow: none;
+		&:before,
+		&:after {
+			top: 0;
+		}
+		&:before {
+			transform: rotate(-45deg);
+		}
+		&:after {
+			transform: rotate(45deg);
+		}
+	}
+}

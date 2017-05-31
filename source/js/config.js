@@ -68,7 +68,8 @@ System.config({
       "github:DEGJS/scrollTo@1.0.1.js",
       "github:DEGJS/scrollTo@1.0.1/scrollTo.js",
       "github:DEGJS/easing@1.0.1.js",
-      "github:DEGJS/easing@1.0.1/easing.js"
+      "github:DEGJS/easing@1.0.1/easing.js",
+      "components/siteNav.js"
     ]
   },
 

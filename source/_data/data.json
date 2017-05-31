@@ -1,5 +1,5 @@
 {
-	"title" : "DEG Email Design Guide",
+	"title" : "DEG | Email Design Guide",
 	"description" : "[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae.",
 	"lang": "en-us",
 	"mainId" : "main-content",
@@ -37,7 +37,7 @@
 	],
 	"url" : "#",
 	"intro": {
-		"title": "DEG Email Design Guide",
+		"title": "Email Design Guide",
 		"description": "[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae."
 	},
 	"guideIntro": {

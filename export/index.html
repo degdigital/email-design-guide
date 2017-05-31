@@ -10,16 +10,43 @@
     <body>
         <a class="is-vishidden" href="#main-content">Skip to main content</a>
         <header class="site-header" role="banner">
-            <div class="wrapper wrapper--large">
-                <a href="https://www.degdigital.com" class="logo-link">
-                    <img src="images/logo.png" class="logo" alt="DEG logo" />
-                </a>
-            </div>
+            <button class="primary-nav__toggle js-primary-nav__toggle">
+                <span class="hamburger"></span>
+                <span class="is-vishidden">Navigation</span>
+            </button>
+            <nav id="nav" class="nav primary-nav">
+                <ul class="primary-nav__list js-primary-nav__list">
+                    <li class="primary-nav__item">
+                        <a href="#guide-intro" class="primary-nav__link js-section-anchor">Introduction</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#viewing-audience" class="primary-nav__link js-section-anchor">Viewing Audience</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#layout" class="primary-nav__link js-section-anchor">Layout</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#navigation" class="primary-nav__link js-section-anchor">Navigation</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#typography" class="primary-nav__link js-section-anchor">Typography</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#images" class="primary-nav__link js-section-anchor">Images</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#animation" class="primary-nav__link js-section-anchor">Animation</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main class="main">
-            <section class="intro section">
+            <section class="intro section" id="intro">
                 <div class="wrapper wrapper--small intro__text">
-                    <h1 class="heading heading--large intro__title">DEG Email Design Guide</h1>
+                    <a href="https://www.degdigital.com" class="logo-link">
+                        <img src="images/logo.png" class="logo" alt="DEG logo" />
+                    </a>
+                    <h1 class="heading heading--large intro__title">Email Design Guide</h1>
                     <p class="intro__description">[Intro Copy] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure ullam accusamus qui hic modi facilis perferendis natus repudiandae.</p>
                 </div>
                 <a href="#guide-intro" class="section-anchor js-section-anchor section-anchor--white">

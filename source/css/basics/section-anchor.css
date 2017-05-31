@@ -27,6 +27,8 @@
 			transform: rotate(45deg) translate(.2em, .2em);
 		}
 	}
+
+	&:visited { color: inherit; }
 }
 
 .section-anchor--blue {
